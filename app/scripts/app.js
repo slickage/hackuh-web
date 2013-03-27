@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('hackuhWebApp', [])
+var App = angular.module('hackuhWebApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -23,3 +23,7 @@ angular.module('hackuhWebApp', [])
         redirectTo: '/'
       });
   });
+
+App.config(['$locationProvider', function($location) {
+  $location.html5Mode(true); //now there won't be a hashbang within URLs for browers that support HTML5 history
+}]);
