@@ -5,19 +5,16 @@ var App = angular.module('hackuhWebApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
+        reloadOnSearch : false,
         controller: 'MainCtrl'
       })
-      .when('/calendar', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/faq', {
+        templateUrl: 'views/faq.html',
+        controller: 'JoinCtrl'
       })
-      .when('/sponsors', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/join', {
+        templateUrl: 'views/join.html',
+        controller: 'JoinCtrl'
       })
       .otherwise({
         redirectTo: '/'

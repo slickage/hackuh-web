@@ -1,1 +1,8 @@
 @import "compass_twitter_bootstrap";
+body {
+  padding-top: 41px;
+}
+a.nav-anchor {
+  position: relative;
+  top: -41px;
+}

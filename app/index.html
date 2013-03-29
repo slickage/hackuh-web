@@ -23,26 +23,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Hack UH</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li active-link><a href="/">Home</a></li>
-              <li active-link><a href="/calendar">Calendar</a></li>
-              <li active-link><a href="/sponsors">Sponsors</a></li>
-              <li active-link><a href="/about">About</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    <div nav-bar></div>
 
     <div class="container" ng-view></div>
 
@@ -50,11 +31,15 @@
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/jquery/jquery.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/directives/active-link.js"></script>
+    <script src="scripts/controllers/faq.js"></script>
+    <script src="scripts/controllers/join.js"></script>
+    <script src="scripts/directives/nav-bar.js"></script>
+    <script src="scripts/services/anchor-scroll.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
