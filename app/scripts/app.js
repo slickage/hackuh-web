@@ -21,6 +21,7 @@ var App = angular.module('hackuhWebApp', [])
       });
   });
 
-App.config(['$locationProvider', function($location) {
-  $location.html5Mode(true); //now there won't be a hashbang within URLs for browers that support HTML5 history
+App.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('#');
+  $locationProvider.html5Mode(true); //now there won't be a hashbang within URLs for browers that support HTML5 history
 }]);
