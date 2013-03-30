@@ -65,6 +65,14 @@ a.nav-anchor {
 	margin-left: 0;
 }
 
+#judges img {
+	height: 140px;
+	width: 140px;
+	-moz-border-radius: 		70px;
+	-webkit-border-radius: 	70px;
+	border-radius: 					70px;
+}
+
 
 // =Decoration
 .prime {
@@ -72,5 +80,14 @@ a.nav-anchor {
 
 	h1 {
 		font-size: 64px;
+	}
+}
+
+#judges {
+	.row {
+		margin-bottom: 40px;
+	}
+	h3 {
+		line-height: 20px;
 	}
 }
