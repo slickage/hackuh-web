@@ -18,7 +18,8 @@ Table of Contents
 
 // =Structure
 body {
-  padding-top: 41px;
+  padding-top: 60px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 a.nav-anchor {
   position: relative;
@@ -35,7 +36,13 @@ a.nav-anchor {
 }
 
 .jumbo.prime {
-	background-color: darkgreen;
+	// background-color: darkgreen;
+	background: darkgreen url(../img/keyboard-bit-2.png) no-repeat center right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/keyboard-bit-2.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/keyboard-bit-2.png', sizingMethod='scale')";
 	color: white;
 	padding: 40px 0;
 }
@@ -54,6 +61,24 @@ a.nav-anchor {
 	margin-top: 20px;
 }
 
+// =Navigation
+.navbar {
+	min-height: 80px;
+	text-transform: uppercase;
+}
+
+.navbar-inner {
+	height: 50px;
+	padding-top: 10px;
+}
+
+// =Headings
+h1, h2, h3, h4, h5, h6 {
+  // font-family: 'Alfa Slab One', cursive;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200;
+}
+
 
 //  =Images
 #sponsors img {
@@ -66,11 +91,19 @@ a.nav-anchor {
 }
 
 #judges img {
-	height: 140px;
-	width: 140px;
+	border: 2px solid #dfdfdf;
+	padding: 4px;
+	height: 125px;
+	width: 125px;
 	-moz-border-radius: 		70px;
 	-webkit-border-radius: 	70px;
 	border-radius: 					70px;
+	transition: 400ms ease;
+}
+
+#judges img:hover {
+	background-color: olivedrab;
+	border-color: olive;
 }
 
 
@@ -78,9 +111,26 @@ a.nav-anchor {
 .prime {
 	text-transform: uppercase;
 
-	h1 {
-		font-size: 64px;
+	.container {
+		min-height: 240px;
 	}
+
+	h1 {
+		font-size: 96px;
+		padding-top: 60px;
+	}
+
+	h3 {
+		font-size: 36px;
+		line-height: 72px;
+		font-weight: 400;
+
+		.light {
+			font-weight: 200;
+		}
+
+	}
+
 }
 
 #judges {
@@ -89,5 +139,6 @@ a.nav-anchor {
 	}
 	h3 {
 		line-height: 20px;
+		margin-top: 20px;
 	}
 }
