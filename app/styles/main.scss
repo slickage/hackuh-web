@@ -37,8 +37,8 @@ a.nav-anchor {
 	margin: 0;
 }
 
-.jumbo.prime {
-	// background-color: darkgreen;
+.jumbo.prime,
+.jumbo.interior {
 	background: darkgreen url(../img/keyboard-bit-2.png) no-repeat center right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -49,6 +49,10 @@ a.nav-anchor {
 	padding: 40px 0;
 }
 
+.jumbo.interior {
+	background-color: dimgray;
+	padding: 10px 0;
+}
 
 #judges .row {
 	margin-top: 20px;
