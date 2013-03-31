@@ -18,8 +18,10 @@ Table of Contents
 
 // =Structure
 body {
-  padding-top: 60px;
 	font-family: 'Source Sans Pro', sans-serif;
+	// font-size: 15px;
+	// line-height: 22px;
+	padding-top: 60px;
 }
 a.nav-anchor {
   position: relative;
@@ -47,15 +49,6 @@ a.nav-anchor {
 	padding: 40px 0;
 }
 
-#sponsors .row {
-	// margin-top: 20px;
-}
-
-#sponsors img {
-	margin-left: 20px;
-	margin-top: 20px;
-}
-
 
 #judges .row {
 	margin-top: 20px;
@@ -81,15 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 //  =Images
-#sponsors img {
-	width: 216px;
-}
-
-#sponsors h4 + img,
-#sponsors img:nth-child(5n+1) {
-	margin-left: 0;
-}
-
 #judges img {
 	border: 2px solid #dfdfdf;
 	padding: 4px;
@@ -106,6 +90,17 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: olive;
 }
 
+// =Links
+a {
+	// text-decoration: none;
+	transition: 300ms ease;
+}
+
+a:hover {
+	// border-bottom: 1px solid #005580;
+	// text-decoration: none;
+}
+
 
 // =Decoration
 .prime {
@@ -117,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	h1 {
 		font-size: 96px;
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 
 	h3 {
@@ -140,5 +135,70 @@ h1, h2, h3, h4, h5, h6 {
 	h3 {
 		line-height: 20px;
 		margin-top: 20px;
+	}
+}
+
+.event {
+	clear: both;
+	float: left;
+	margin-bottom: 30px;
+
+	.date {
+		background-color: olivedrab;
+		color: white;
+		float: left;
+		padding: 6px 0 12px 10px;
+		width: 60px;
+		-moz-border-radius: 		3px;
+		-webkit-border-radius: 	3px;
+		border-radius: 					3px;
+	}
+	.description {
+		float: left;
+		padding-left: 20px;
+	}
+
+	.month {
+		float: left;
+		text-transform: uppercase;
+	}
+
+	.day {
+		clear: left;
+		float: left;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: right;
+	}
+
+	h4 {
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+#sponsors {
+	.row {}
+
+	img {
+		// margin-left: 20px;
+		margin-top: 20px;
+		width: 216px;
+	}
+
+	a {
+		margin-left: 20px;
+	}
+
+	a:nth-child(5n+1) {
+		margin-left: 0;
+	}
+
+	h4 + a
+	{
+		margin-left: 0;
 	}
 }
