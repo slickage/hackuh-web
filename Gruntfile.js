@@ -229,7 +229,7 @@ module.exports = function (grunt) {
             '*.{ico,txt}',
             '.htaccess',
             'components/**/*',
-            'images/{,*/}*.{gif,webp}'
+            'images/{,*/}*.{gif,webp,png}'
           ]
         }]
       }
@@ -265,7 +265,7 @@ module.exports = function (grunt) {
     'coffee',
     'compass:dist',
     'useminPrepare',
-    'imagemin',
+    // 'imagemin',
     'cssmin',
     'htmlmin',
     'concat',
