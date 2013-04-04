@@ -1,5 +1,16 @@
 <div class="jumbo interior">
 	<div class="container">
-	  <h1>FAQ</h1>
-	</div>
+    <h1>FAQ</h1>
+  </div>
+</div>
+
+<div class="jumbo">
+  <div class="container">
+    <div class="row" ng-repeat="question in questions">
+      <div class="span12">
+        <h2>{{question}}</h2>
+        <h4>{{answers[$index]}}</h4>
+      </div>
+    </div>
+  </div>
 </div>

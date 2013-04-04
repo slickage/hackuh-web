@@ -5,23 +5,18 @@ var App = angular.module('hackuhWebApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        reloadOnSearch : false,
-        controller: 'MainCtrl'
+        reloadOnSearch : false
       })
       .when('/faq', {
         templateUrl: 'views/faq.html',
-        controller: 'JoinCtrl'
-      })
-      .when('/join', {
-        templateUrl: 'views/join.html',
-        controller: 'JoinCtrl'
+        controller: 'FAQCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
 
-App.config(['$locationProvider', function($locationProvider) {
+App.config(['$locationProvider', function ($locationProvider) {
   $locationProvider.hashPrefix('#');
   $locationProvider.html5Mode(true); //now there won't be a hashbang within URLs for browers that support HTML5 history
 }]);

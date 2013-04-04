@@ -15,11 +15,12 @@
   "quotmark": "single",
   "regexp": true,
   "undef": true,
-  "unused": true,
+  "unused": false,
   "strict": true,
   "trailing": true,
   "smarttabs": true,
   "globals": {
-    "angular": false
+    "angular": false,
+    "$": false
   }
 }
