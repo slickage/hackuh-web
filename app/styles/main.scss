@@ -15,17 +15,14 @@ Table of Contents
 */
 
 @import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+@import "main_responsive";
 
 // =Structure
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	// font-size: 15px;
 	// line-height: 22px;
-	padding-top: 60px;
-}
-a.nav-anchor {
-  position: relative;
-  top: -41px;
 }
 
 .jumbo.highlight {
@@ -65,7 +62,7 @@ a.nav-anchor {
 }
 
 .navbar-inner {
-	height: 50px;
+	min-height: 50px;
 	padding-top: 10px;
 }
 

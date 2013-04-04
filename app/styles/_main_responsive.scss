@@ -1,0 +1,13 @@
+@media (min-width: 979px) {
+
+  // adjust for fixed navbar
+  a.nav-anchor {
+    position: relative;
+    top: -41px;
+  }
+
+  // adjust for fixed navbar
+  .movedown {
+    padding-top: 60px;
+  }
+}

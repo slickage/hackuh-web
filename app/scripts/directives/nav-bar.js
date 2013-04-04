@@ -2,6 +2,7 @@ angular.module('hackuhWebApp').directive('navBar', ['$rootScope', '$location', f
   return {
     restrict : 'A',
     templateUrl : 'views/navbar.html',
+    replace: true,
     link: function(scope, element, attrs, controller) {
       // smooth scroll 
       function smoothScroll() {
@@ -28,6 +29,13 @@ angular.module('hackuhWebApp').directive('navBar', ['$rootScope', '$location', f
       });
       $rootScope.$on("$routeUpdate", function(){
         smoothScroll();
+      });
+
+      // manually do the collapse for the navbar
+      var collapseBtn = $(element).find('#collapse-btn');
+      var collapsible = $(element).find('.nav-collapse');
+      collapseBtn.on('click', function (){
+        collapsible.collapse('toggle');
       });
     }
   };
