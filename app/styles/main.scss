@@ -16,7 +16,6 @@ Table of Contents
 
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
-@import "main_responsive";
 
 // =Structure
 body {
@@ -151,8 +150,8 @@ a:hover {
 		background-color: olivedrab;
 		color: white;
 		float: left;
-		padding: 6px 0 12px 10px;
-		width: 60px;
+		padding: 6px 10px 12px;
+		min-width: 30px;
 		-moz-border-radius: 		3px;
 		-webkit-border-radius: 	3px;
 		border-radius: 					3px;
@@ -189,7 +188,7 @@ a:hover {
 
 	img {
 		// margin-left: 20px;
-		margin-top: 20px;
+		margin-bottom: 20px;
 		width: 216px;
 	}
 
@@ -206,3 +205,5 @@ a:hover {
 		margin-left: 0;
 	}
 }
+
+@import "main_responsive";

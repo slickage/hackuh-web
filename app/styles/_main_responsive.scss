@@ -11,3 +11,68 @@
     padding-top: 60px;
   }
 }
+
+@media (max-width: 979px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.jumbo.prime h1 {
+		line-height: 80px;
+		padding-top: 40px;
+	}
+
+	.navbar {
+		margin-bottom: 0;
+	}
+
+	#sponsors .row a:nth-child(5n+1) {
+		margin-left: 20px;
+	}
+
+	#sponsors .row a:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	#judges img {
+		height: auto;
+		width: 104px;
+		-moz-border-radius: 		62px;
+		-webkit-border-radius: 	62px;
+		border-radius: 					62px;
+	}
+
+
+}
+
+@media (max-width: 767px) {
+
+	.navbar {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.container,
+	.jumbo .container {
+		width: auto;
+	}
+
+	.jumbo .container {
+		padding: 0 10px;
+		// width: 100%;
+	}
+
+	#sponsors {
+		.row {
+
+			a:nth-child(3n+1) {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.event .description {
+		width: 530px;
+	}
+}
