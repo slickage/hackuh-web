@@ -1,3 +1,5 @@
+@import "compass_twitter_bootstrap_responsive";
+
 @media (min-width: 979px) {
 
   // adjust for fixed navbar
@@ -41,6 +43,10 @@
 		-moz-border-radius: 		62px;
 		-webkit-border-radius: 	62px;
 		border-radius: 					62px;
+	}
+
+	.event .description {
+		width: 650px;
 	}
 
 
