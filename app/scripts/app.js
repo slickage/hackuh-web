@@ -8,8 +8,7 @@ var App = angular.module('hackuhWebApp', [])
         reloadOnSearch : false
       })
       .when('/faq', {
-        templateUrl: 'views/faq.html',
-        controller: 'FAQCtrl'
+        templateUrl: 'views/faq.html'
       })
       .otherwise({
         redirectTo: '/'
