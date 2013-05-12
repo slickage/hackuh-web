@@ -12,6 +12,12 @@
   .movedown {
     padding-top: 60px;
   }
+
+  // adjust for text float
+  .event .description {
+  	width: 750px;
+  }
+
 }
 
 @media (max-width: 979px) {
